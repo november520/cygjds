@@ -1,0 +1,440 @@
+@charset "utf-8";
+/* CSS Document */
+.p_bgBox {
+    background-position: center top!important;
+}
+
+@media only screen and (min-width: 1367px) {
+    /*大屏*/
+
+
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+    /*大中屏*/
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    /*中屏*/
+
+
+    #w_grid-1566394744563> div > .p_gridbox > .p_gridCell:nth-child(2n){width:58%;}
+    #w_grid-1566742897453> div > .p_gridbox > .p_gridCell:nth-child(2n){width:58%!important;}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    /*中小屏手机*/
+    #w_grid-1566492587429{margin-top:34%;}
+    #c_portalResComplaintPage_detail-15664927482602412{display:none;}
+    #c_portalResNews_list-15664932122507049 .newList1{display:none;}
+    #c_portalResNews_list-15664932122507049 .leftTime{width:20%;}  #c_portalResNews_list-15664932122507049 .newTitle{font-size:22px;
+                                                                       -webkit-line-clamp: 1;
+                                                                       overflow: hidden;
+                                                                       display: -webkit-box;
+                                                                       -webkit-box-orient: vertical;
+                                                                       white-space: normal;
+                                                                   }
+    #c_portalResNews_list-15664932122507049 .newMs{
+        font-size:16px;  -webkit-line-clamp: 2!important;
+        overflow: hidden!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical!important;
+        white-space: normal!important;
+    }
+    #w_grid-1566486922428{margin-top:27%;}
+    #w_grid-1566487711728{margin-top:16%;}
+    #content_box-1566491085385-0{display:none;}
+    #w_grid-1566491211863{max-width:100%;margin-top:27%;}
+    #c_portalResEbizads_banner-15664852939577212 .flicks li:nth-child(1) a::after {
+        content: "";
+        width: 500px;
+        height: 261px;
+        position: absolute;
+        left: 17%;
+        top: 31%;
+        background-size: 500px 197px!important;
+        background: url(./img/zg.png) center center no-repeat;
+    }
+    #c_portalResEbizads_banner-15664852939577212 .flicks li:nth-child(2) a::after {
+        content: "";
+        width: 320px;
+        height: 261px;
+        position: absolute;
+        left: 17%;
+        top: 31%;
+        background-size: 500px 197px!important;
+        background: url(./img/zg.png) center center no-repeat;
+    }
+    #w_common_text-1566491302059 span{    -webkit-line-clamp: 5!important;
+        overflow: hidden!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical!important;
+        white-space: normal!important;}
+
+    #c_portalResComplaintPage_detail-15667469976829122 p{line-height:normal;}
+    #c_portalResComplaintPage_detail-15667469976829122{    padding: 28px;}
+    #c_portalResEmploy_list-15667489036818710 .job-join{bottom:34px;}
+    #c_portalResEmploy_list-15667489036818710 .job-iocn {bottom:34px;}
+
+
+
+    #w_grid-1566746843915 p{height:38px;line-height:38px;}
+    #w_grid-1566746843919 p{height:38px;line-height:38px;}
+    #w_grid-1566746843922 p{height:38px;line-height:38px;}
+
+    #c_portalResComplaintPage_detail-15669077173321178{display:block!important;}
+    #c_portalResComplaintPage_detail-15664898044527047{display:none;}
+    #w_grid-1566489493742{margin-top:20%;}
+    #w_common_text-1566489586957{margin-bottom:20px;}
+
+
+    .p_bgBox:after {
+        content: "";
+        width: 100%;
+        background-size: 22px 47px!important;
+        height: 81px;
+        background: url(./img/wwx.png) no-repeat center center;
+        position: absolute;
+        animation: haha 3s infinite;
+        -webkit-animation: haha 3s infinite;
+        left: 0px;
+        bottom: 0px;
+        margin-bottom: 0px;
+        -webkit-backface-visibility: hidden;
+    }
+    #content_box-1566395418467-1{display:none;}
+    #w_grid-1566394744563{height:auto; padding:0px;   min-height: auto!important;}
+    #c_portalResnav_main-15664846882579826{min-height:auto;}
+    #content_box-1566744240629-1{display:none;}
+    #content_box-1566394744563-0{width:39%;}
+    #content_box-1566742897453-0{width:30%;}
+    #content_box-1566742897453-1{    width: 70%;
+        float: right;
+        clear: none!important;    padding-right: 20px;
+        margin-top: 14px;}
+    #content_box-1566394744563-1{    width: 60%;
+        float: right;
+        clear: none!important;    padding-right: 20px;
+        margin-top: 14px;}
+    #w_fimg-1566394845679{margin-left:20px;}
+    #w_fimg-1566742900645{margin-left:20px;}
+
+    #w_grid-1566744240629{min-height:auto;}
+    #w_grid-1566742897453{min-height:auto;height:80px;}
+
+    #c_portalResnav_main-15667443018701755 .p_problemCategory{float:right;}
+    #c_portalResnav_main-15667443018701755 .p_btn-show {
+        color: #000;
+        background: #261870;
+        height: 50px;
+        padding: 0px;
+        min-width: 50px;
+        line-height: 50px;
+    }
+    #c_portalResnav_main-15667443018701755 .p_c-fff{
+
+        color: #fff;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #c_portalResnav_main-15667443018701755 .p_category{height:1080px;}
+    #c_portalResnav_main-15667443018701755 .p_categoryBox{background:#fff;}
+    #c_portalResnav_main-15667443018701755  .p_categoryBtn{margin:0px;}
+    #c_portalResnav_main-15664846882579826 .p_problemCategory{float:right;}
+
+    #c_portalResnav_main-15664846882579826 .p_btn-show {
+        color: #000;
+        background: #fff;
+        height: 50px;
+        padding: 0px;
+        min-width: 50px;
+        line-height: 50px;
+    }
+    #c_portalResnav_main-15664846882579826  .p_c-fff{
+
+        color: #261870;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #c_portalResnav_main-15664846882579826 .p_category{height:1080px;}
+    #c_portalResnav_main-15664846882579826 .p_categoryBox{background:#fff;}
+    #c_portalResnav_main-15664846882579826  .p_categoryBtn{margin:0px;}
+    .p_link{margin:0 15px;padding-left:10px;font-size:20px;line-height:38px;}
+    #c_portalResnav_main-15667443018701755 .p_childBox .p_parentBox{
+        height: 50px;
+        width: 100%;
+        transform: translate(-6%, 0%);
+        left: 50%!important;
+        top: 50%;
+    }
+    #c_portalResnav_main-15664846882579826  .p_childBox .p_parentBox{
+        height: 50px;
+        width: 100%;
+        transform: translate(-6%, 0%);
+        left: 50%!important;
+        top: 50%;
+    }
+    .p_SwipPanelBox{display:none;}
+    .p_btn-hide .p_c-fff{height:50px;background:#261870;    color: #fff!important;}
+
+}
+
+@media only screen and (max-width: 414px) {
+    #content_box-1566395418467-1{display:none;}
+    #w_grid-1566394744563{height:auto; padding:0px;   min-height: auto!important;}
+    #c_portalResnav_main-15664846882579826{min-height:auto;}
+    #content_box-1566744240629-1{display:none;}
+    #content_box-1566394744563-0{width:55%;}
+    #content_box-1566742897453-0{width:55%;}
+    #content_box-1566742897453-1{    width: 45%;
+        float: right;
+        clear: none!important;    padding-right: 20px;
+        margin-top: 10px;}
+    #content_box-1566394744563-1{   width: 45%;
+        float: right;
+        clear: none!important;
+        padding-right: 20px;
+        margin-top: 9px;    margin-bottom: 9px;}
+    #w_fimg-1566394845679{margin-left:20px;margin-top:14px;}
+    #w_fimg-1566742900645{margin-left:20px;margin-top:14px;}
+
+    #w_grid-1566744240629{min-height:auto;}
+    #w_grid-1566742897453{min-height:auto;height:70px;}
+
+    #c_portalResnav_main-15667443018701755 .p_problemCategory{float:right;}
+    #c_portalResnav_main-15667443018701755 .p_btn-show {
+        color: #000;
+        background: #da251d;
+        height: 50px;
+        padding: 0px;
+        min-width: 50px;
+        line-height: 50px;
+    }
+    .c_portalResnav_main-01001002 .p_childBox .p_parent{border:none!important;}
+    #c_portalResnav_main-15667443018701755 .p_c-fff{
+
+        color: #fff;
+        margin: 0px;
+        width: 100%;
+        text-align: center;    font-size: 25px;
+        line-height: 45px;
+    }
+
+    #c_portalResnav_main-15667443018701755 .p_category{height:1080px;}
+    #c_portalResnav_main-15667443018701755 .p_categoryBox{background:#fff;}
+    #c_portalResnav_main-15667443018701755  .p_categoryBtn{margin:0px;}
+    #c_portalResnav_main-15664846882579826 .p_problemCategory{float:right;}
+
+    #c_portalResnav_main-15664846882579826 .p_btn-show {
+        color: #000;
+        background: #fff;
+        height: 50px;
+        padding: 0px;    font-size: 25px;
+        min-width: 50px;
+        line-height: 50px;
+    }
+    #c_portalResnav_main-15664846882579826  .p_c-fff{
+
+        color: #da251d;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    #c_portalResnav_main-15664846882579826 .p_category{height:1080px;}
+    #c_portalResnav_main-15664846882579826 .p_categoryBox{background:#fff;}
+    #c_portalResnav_main-15664846882579826  .p_categoryBtn{margin:0px;}
+    .p_link{margin:0 15px;padding-left:10px;font-size:20px;line-height:38px;}
+    #c_portalResnav_main-15667443018701755 .p_childBox .p_parentBox{
+        height: 50px;
+        width: 100%;
+        transform: translate(-6%, 0%);
+        left: 50%!important;
+        top: 50%;
+    }
+    #c_portalResnav_main-15664846882579826  .p_childBox .p_parentBox{
+        height: 50px;
+        width: 100%;
+        transform: translate(-6%, 0%);
+        left: 50%!important;
+        top: 50%;
+    }
+    .p_SwipPanelBox{display:none;}
+    .p_btn-hide .p_c-fff{height:50px;background:#da251d;    color: #fff!important;}
+
+
+
+
+
+    #w_grid-1566494035671{margin-top:37%;}
+    #w_common_text-1566494223671{padding-top:30px;padding-left:20px;}
+    #c_portalResComplaintPage_detail-15664943597352460{padding-left:20px;}
+    #w_grid-1566494350361{margin-top:26px;    margin-bottom: 73px;}
+    #content_box-1566494350361-1{display:none;}
+    #c_portalResComplaintPage_detail-15665728833012062 p{font-size:18px;line-height:normal;padding-top:20px;padding-bottom:20px;}
+    #w_grid-1566492587429{margin-top:34%;}
+    #content_box-1566492587429-1{display:none;}
+    #c_portalResNews_list-15664932122507049 .newList1{display:none;}
+    #c_portalResNews_list-15664932122507049 .leftTime{width:20%;padding:0px;}
+    #w_grid-1566491085385{margin-top:40%;}
+    #content_box-1566491085385-0{display:none;}
+    #w_common_text-1566491302059 span{font-size:18px;line-height:39px;}
+    #c_portalResComplaintPage_detail-15664913993777174 ul{width:100%;}
+    #c_portalResComplaintPage_detail-15664913993777174 a{font-size:18px;}
+
+    #w_grid-1566486922428{margin-top:30%;}
+    #c_portalResComplaintPage_detail-15664872516323532 a{font-size:18px;}
+    #w_grid-1566487711728{margin-top:5%;}
+    #c_portalResComplaintPage_detail-15664878167206698 a{font-size:18px;}
+    #content_box-1566486271368-1{border-top:1px solid rgba(255,255,255,0.3);}
+
+    #c_portalResComplaintPage_detail-15664943597352460 p{font-size:18px;lien-height:39px;}
+    #c_portalResComplaintPage_detail-15664943597352460  a{font-size:18px;}
+    #c_portalResNews_list-15664932122507049 .newTitle{font-size:18px;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    #c_portalResNews_list-15664932122507049 .newMs{
+        font-size:16px;  -webkit-line-clamp: 2!important;
+        overflow: hidden!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical!important;
+        white-space: normal!important;
+    }
+    #c_portalResEbizads_banner-15664852939577212 .flicks li:nth-child(1)::after{
+        background-size: 300px 118px!important;
+        left: -125px;
+    }
+
+
+    #c_portalResComplaintPage_detail-15669077173321178{display:block!important;}
+    #c_portalResComplaintPage_detail-15664898044527047{display:none;}
+    #w_grid-1566489493742{margin-top:20%;}
+    #w_common_text-1566489586957{margin-bottom:20px;}
+
+
+    .p_bgBox:after {
+        content: "";
+        width: 100%;
+        background-size: 22px 47px!important;
+        height: 81px;
+        background: url(./img/wwx.png) no-repeat center center;
+        position: absolute;
+        animation: haha 3s infinite;
+        -webkit-animation: haha 3s infinite;
+        left: 0px;
+        bottom: 0px;
+        margin-bottom: 0px;
+        -webkit-backface-visibility: hidden;
+    }
+
+    #c_portalResEbizads_banner-15664852939577212 .flicks li:nth-child(1) a::after {
+        content: "";
+        width: 320px;
+        height: 261px;
+        position: absolute;
+        left: 17%;
+        top: 31%;
+        background-size: 320px 126px!important;
+        background: url(./img/zg.png) center center no-repeat;
+    }
+    #c_portalResEbizads_banner-15664852939577212 .flicks li:nth-child(2) a::after {
+        content: "";
+        width: 320px;
+        height: 261px;
+        position: absolute;
+        left: 17%;
+        top: 31%;
+        background-size: 320px 126px!important;
+        background: url(./img/zg.png) center center no-repeat;
+    }
+    #w_common_text-1566491302059 span{    -webkit-line-clamp: 5!important;
+        overflow: hidden!important;
+        display: -webkit-box!important;
+        -webkit-box-orient: vertical!important;
+        white-space: normal!important;}
+
+    #c_portalResComplaintPage_detail-15667469976829122 p{line-height:normal;}
+    #c_portalResComplaintPage_detail-15667469976829122{    padding: 28px;}
+    #c_portalResEmploy_list-15667489036818710 .job-join{bottom:34px;}
+    #c_portalResEmploy_list-15667489036818710 .job-iocn {bottom:34px;}
+
+
+
+    #w_grid-1566746843915 p{height:38px;line-height:38px;}
+    #w_grid-1566746843919 p{height:38px;line-height:38px;}
+    #w_grid-1566746843922 p{height:38px;line-height:38px;}
+    #c_portalResMessage_form-15667488211594478 .form-control{height: auto;
+        /* margin-bottom: 50px; */
+        padding-bottom: 5px;}  #c_product_list-15688285105368231 .product-list li{width:100%!important;}
+
+
+
+    #c_portalResProduct_category-15667516163634256{display:none!important;}
+    #c_portalResProduct_category-15694275419875643{display:block!important;}
+
+    #c_portalResProduct_category-15694275419875643 .proCateBox{background:none;}
+    #c_portalResProduct_category-15694275419875643 .proCate{background:none;}
+    #c_portalResProduct_category-15694275419875643 .proList{background: #181818;
+        border: none;
+        margin-bottom: 10px;
+        width: 48%;
+        float: left;
+        margin: 1%;}
+    #c_portalResProduct_category-15694275419875643 .proLink{color:#fff;text-align:center;}
+
+
+
+    #c_portalResProduct_category-15694283593809884 .proCateBox{background:none;}
+    #c_portalResProduct_category-15694283593809884 .proCate{background:none;}
+    #c_portalResProduct_category-15694283593809884 .proList{background: #181818;
+        border: none;
+        margin-bottom: 10px;
+        width: 48%;
+        float: left;
+        margin: 1%;}
+    #c_portalResProduct_category-15694283593809884 .proLink{color:#fff;text-align:center;}
+
+    #content_box-1566751738006-0{display:block;}
+    #c_portalResProduct_category-1566751697983{display:none;}
+    #c_portalResProduct_category-15694283593809884 {display:block!important;}
+    #c_portalResComplaintPage_detail-15694286466170286{position: fixed;
+        z-index: 9999;
+        bottom: 0px;width:100%;display:block!important;}
+    #w_grid-1566746843877{margin-bottom:50px!important;}
+
+}
+
+
+
+
+#c_portalResProduct_category-15694283593809884 {display:none;}
+
+#c_portalResProduct_category-15694275419875643{display:none;}
+
+
+
+
+
+#c_portalResComplaintPage_detail-15669077173321178{display:none;}
+#c_portalResComplaintPage_detail-15669077173321178 a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+}
+
+#c_portalResComplaintPage_detail-15694286466170286{display:none;}
