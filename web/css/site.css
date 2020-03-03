@@ -1,0 +1,274 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.pagebox {
+    position: relative;
+}
+
+#c_portalResComplaintPage_detail-15688153858025437 {
+    position: absolute !important;
+    width: 100% !important;
+    bottom: 0px !important;
+}
+
+#content_box-1566492587429-1 {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .wd-guide {
+        display: none !important;
+    }
+
+    #w_grid-1566751697948  {
+        display: none;
+    }
+
+    #w_grid-1566751199650 .p_gridbox {
+        box-shadow: none !important;
+        border-bottom: 1px #dededf solid;
+    }
+
+    #w_grid-1566751199650 {
+        margin-top: 40px !important;
+        display: none;
+    }
+
+    #w_grid-1566751697948 .p_gridbox {
+        box-shadow: none !important;
+        border-bottom: 1px #dededf solid;
+    }
+
+    #w_grid-1566751697948 {
+        margin-top: 40px !important;
+    }
+
+    #w_grid-1566750153652 .p_gridbox {
+        box-shadow: none !important;
+        border-bottom: 1px #dededf solid;
+    }
+
+    #w_grid-1566750153652 {
+        margin-top: 40px !important;
+    }
+
+    #w_grid-1566750995764 .p_gridbox {
+        box-shadow: none !important;
+        border-bottom: 1px #dededf solid;
+    }
+
+    #w_grid-1566750995764 {
+        margin-top: 40px !important;
+    }
+
+    #w_grid-1566751199650 .p_gridbox {
+        box-shadow: none !important;
+        border-bottom: 1px #dededf solid;
+    }
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("http://dfs.yun300.cn/group1/M00/18/34/rBQBHV2A4oWEU8FlAAAAAMoy-SI460.ttf");
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    /*中屏*/
+    #w_grid-1566394744563 > div > .p_gridbox > .p_gridCell:nth-child(2n) {
+        width: 76%;
+    }
+
+    #w_grid-1566742897453 > div > .p_gridbox > .p_gridCell:nth-child(2n) {
+        width: 76%;
+    }
+}
+
+#c_portalResnav_main-15667443018701755 .p_childBox .p_title {
+    height: 50px;
+    background: rgba(38, 24, 112, 0.6);
+    line-height: 50px;
+    color: #fff;
+    border-bottom: 1px solid rgba(38, 24, 112, 0.3);
+}
+
+#c_portalResnav_main-15667443018701755 .p_childBox .p_title:hover {
+    background: #000;
+    color: #fff;
+}
+
+#c_portalResnav_main-15667443018701755 .p_title {
+    color: #333;
+}
+
+#c_portalResnav_main-15667443018701755 .p_title:hover {
+    color: #261870;
+}
+
+#c_portalResnav_main-15667443018701755 .p_childBox .p_parentBox {
+    height: 50px;
+}
+
+#c_portalResnav_main-15667443018701755 .p_childBox .p_title:after {
+    display: none;
+}
+
+#c_portalResnav_main-15667443018701755 .p_title:after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background: #261870;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 98%;
+    transition: 0.6s all;
+    position: absolute;
+}
+
+#c_portalResnav_main-15667443018701755 .p_title:hover::after {
+    width: 98%;
+}
+
+.p_page {
+    display: inline-block !important;
+}
+
+#w_grid-1566394744563 .p_gridbox {
+    overflow: visible;
+}
+
+#w_grid-1566394744563:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+iframe {
+    display: none;
+}
+
+#w_grid-1566742897453:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #dedede;
+    position: absolute;
+    left: 0px;
+    top: 95px;
+}
+
+#w_grid-1566742897453 .p_gridbox {
+    border: none !important;
+    overflow: visible;
+}
+
+#w_grid-1566742897453 {
+    overflow: visible;
+}
+
+.p_bgBox {
+    animation: pulse 12s infinite 2s;
+    -webkit-animation: pulse 12s infinite 2s;
+}
+
+#c_portalResComplaintPage_detail-15665728833012062 {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+}
+
+#c_portalResSearch_total-15664965680205428 {
+    margin-top: 26px !important;
+}
+
+#content_box-1566488410212-1 {
+    display: none !important;
+}
+
+#w_grid-1566395418467 .p_gridbox {
+    border: none !important;
+}
+
+.ji {
+    min-height: auto;
+    position: absolute;
+    left: 0px;
+    top: 114px;
+}
+
+.screen_8 .p_bgBox:after {
+    display: none !important;
+}
+
+.p_bgBox:after {
+    content: "";
+    width: 100%;
+    height: 81px;
+    background: url(/img/wwx.png) no-repeat center center;
+    position: absolute;
+    animation: haha 3s infinite;
+    -webkit-animation: haha 3s infinite;
+    left: 0px;
+    bottom: 20px;
+    margin-bottom: 30px;
+    -webkit-backface-visibility: hidden;
+}
+
+#content_box-1566394503530-1:after {
+    content: "";
+    width: 100%;
+    height: 81px;
+    background: url(/img/wwx.png) no-repeat center center;
+    position: absolute;
+    animation: haha 3s infinite;
+    -webkit-animation: haha 3s infinite;
+    left: 0px;
+    bottom: 20px;
+    margin-bottom: 30px;
+    -webkit-backface-visibility: hidden;
+}
+
+#c_portalResEbizads_banner-15664852939577212:after {
+    content: "";
+    width: 100%;
+    height: 81px;
+    background: url(/img/wwx.png) no-repeat center center;
+    position: absolute;
+    margin-bottom: 30px;
+    animation: haha 3s infinite;
+    -webkit-animation: haha 3s infinite;
+    left: 0px;
+    bottom: 20px;
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes haha {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes hahas {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -8px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
