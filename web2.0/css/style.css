@@ -414,7 +414,7 @@ button.kc-button {
   padding: 0px 30px; }
 
 .inner-banner {
-  background: url(../images/watch-video-1-1.jpg) no-repeat center bottom; 
+  background: url(../images/watch-video-1-1.jpg) no-repeat center bottom;
   /* background-color: #1E1E1E; */
   text-align: center;
   -webkit-background-size: cover;
@@ -530,8 +530,6 @@ button.kc-button {
     background: #9d844e !important;
     color: #ffffff; }
 
-.home-one {
-  background: #fff; }
   .home-one .top-bar .box {
     height: 110px; }
     .home-one .top-bar .box .icon {
@@ -571,12 +569,12 @@ button.kc-button {
           .home-one .header .kc-navbar li .submenu-primary ul {
             padding-left: 0px; }
         .home-one .header .kc-navbar li > a {
-          height: 50px;
+          height: 93px;
           font-weight: 600;
           letter-spacing: 1px;
           font-size: 16px;
-          line-height: 50px;
-          padding: 0 35px;
+          line-height: 93px;
+
           color: #ffffff;
           font-family: 'Cairo', sans-serif; }
           .home-one .header .kc-navbar li > a:hover, .home-one .header .kc-navbar li > a:active, .home-one .header .kc-navbar li > a:focus {
@@ -1857,7 +1855,7 @@ button.kc-button {
     .awesome-design .design .right .box p {
       color: #676767;
       font-size: 16px;
-      line-height: 20px; 
+      line-height: 20px;
 			text-indent: 32px;}
 
 .history {
@@ -2818,7 +2816,7 @@ button.kc-button {
   max-height: 665px;
   overflow: hidden; }
   .page-design-detail .design-thumb img {
-    display: block; 
+    display: block;
 		margin: 0 auto;}
 .page-design-detail .sec-margin-top {
   margin-top: -70px;
@@ -2983,17 +2981,17 @@ button.kc-button {
 										margin: 0 0 0 0 \9;
 									}
 
-	.home-join li a 				{	
+	.home-join li a 				{
 										display: block;
-										padding: 10px 20px; 	
+										padding: 10px 20px;
 										color: #333;
 
 
 	}
 	.home-join li span 				{	font-size: 18px; display: block; margin-top: 10px;				}
 	.home-join li a:first-child 	{	border-left: 1px solid #e2e2e2;									}
-	
-	.home-join li:hover img 		{	
+
+	.home-join li:hover img 		{
 
 										-webkit-animation:pulse 0.5s 0s ease both;
 										-moz-animation:pulse 0.5s  0s ease both;}
@@ -3007,30 +3005,30 @@ button.kc-button {
 
 	}
 	/* 新闻中心 */
-	
+
 	.home-news-box 					{	background: #f3f3f3; padding: 110px 0;								}
 	.home-news 						{	padding: 0 10px;overflow: hidden;	}
 	.news-item-r,
 	.news-item-l					{ background: #fff; min-height: 275px;					}
-	
+
 	.news-item-l .news-name,
 	.news-item-r .news-name 		{
 										padding: 20px;
-										border-bottom: 1px solid #f3f3f3;	
+										border-bottom: 1px solid #f3f3f3;
 										font-size: 22px;
 										color: #000;
 										position: relative;
-	
+
 									}
-	
+
 	.news-item-l .news-name .en,
 	.news-item-r .news-name .en 	{	font-size: 14px; color: #9a9a9a; text-transform: uppercase; font-family: "Arial"; margin-left: 10px;	}
-	
+
 	.news-item-l .news-name .more,
 	.news-item-r .news-name .more
-	
-									{	
-	
+
+									{
+
 										position: absolute;
 										right: 0;
 										top: 0;
@@ -3041,12 +3039,12 @@ button.kc-button {
 										padding: 20px 30px;
 										border-left: 1px solid #f3f3f3;
 										display: inline-block;
-	
+
 									}
-	
+
 	.last-news 						{	padding: 0px 20px;	}
 	.last-news li 					{	margin: 20px 0;		}
-	
+
 	.last-news .pic 				{	width: 30%; float: left;	}
 	.last-news .txt 				{	width: 67%; float: left; margin-left: 3%; 	}
 	.last-news .txt .name 			{	font-size: 14px; overflow: hidden; width: 90%;			}
@@ -3063,10 +3061,10 @@ button.kc-button {
     max-width: 100%;
     max-height: 100%;
 }
-	
+
 	.media-focus li .text .clude,
 	.last-news .txt span 			{	font-size: 12px;display: block; height:40px; line-height:20px;  margin-top: 5px; color: #7a7a7a; overflow:hidden}
-	
+
 	.text-overf {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -3075,7 +3073,7 @@ button.kc-button {
 	.media-focus li 				{	padding: 8px; position: relative; height: 80px;		}
 	.media-focus li .num 			{	width: 20%;	float: left;	}
 	.media-focus li .text 			{	width: 80%;	float: right;	}
-	
+
 	.media-focus li .num span 		{	display: block; width: 100%;  font-size: 60px; font-family: "Tahoma"; color: #9a9a9a;height: 80px;
     line-height: 80px;
     text-align: center;	}
@@ -3083,20 +3081,20 @@ button.kc-button {
 	.media-focus li .text .name 	{	height: 28px; line-height: 28px; font-size: 14px; position: relative;		}
 	.media-focus li .text .name a 	{	display: inline-block; width: 75%;color:#333	}
 	.media-focus li .text .name .time
-	
+
 									{	position: absolute; right: 0; top: 0; color: #b9b9b9; font-size: 12px;	border: 0;	}
-	
+
 	.media-focus li:hover 			{	background: #9d844e; color: #fff;	}
-	
-	
+
+
 	.media-focus li:hover .clude,
 	.media-focus li:hover .name a,
 	.media-focus li:hover .name .time,
 	.media-focus li:hover .num span {	color: #fff;						}
-	
+
 	.media-focus li:hover .num span {	border-right: 1px solid #ffffff;	 }
 	.media-focus li:hover .line 	{	display: block;						}
-	.media-focus li .line 			{	
+	.media-focus li .line 			{
 										display: none;
 										width: 10px;
 										height: 100%;
@@ -3105,12 +3103,12 @@ button.kc-button {
 										top: 5px;
 										background: #9d844e;
 										border: 0;
-	
+
 	}
 	.jzimg img{
 		width: 250px !important;
 		height: 170px !important;
 	}
-	
+
 
 
