@@ -547,7 +547,7 @@ button.kc-button {
       .home-one .top-bar .box ul li:first-child {
         padding-left: 0; }
   .home-one .header {
-    background-color: #100909;
+    /*background-color: #100909;*/
     position: relative; }
     .home-one .header .kc-navbar {
       margin-left: -15px; }
