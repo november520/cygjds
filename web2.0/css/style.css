@@ -548,7 +548,9 @@ button.kc-button {
         padding-left: 0; }
   .home-one .header {
     /*background-color: #100909;*/
-    position: relative; }
+    position: relative;
+    right: 100px;
+    }
     .home-one .header .kc-navbar {
       margin-left: -15px; }
       .home-one .header .kc-navbar .uk-dropdown, .home-one .header .kc-navbar .uk-dropdown-blank {

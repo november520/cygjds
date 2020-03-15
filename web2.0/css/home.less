@@ -134,17 +134,136 @@
 .home-bg3{
     background-color: rgba(21,21,21,1);
     .bg3-content{
-        height: calc(~"100% - 100px");
+        height: 100%;
         .left-img{
             height: 100%;
             width: 100%;
+        }
+        .txt-content{
+            padding: 250px 10%;
+            .org-info{
+                display: inline-block;
+                width: 600px;
+                min-width: 450px;
+                .org-title{
+                    .txt-1{
+                        font-family: "Oswald";
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                    .txt-2{
+                        font-family: "Oswald";
+                        font-size: 36px;
+                        color: #fff;
+                    }
+                }
+            }
+            .org-content{
+                margin-top: 40px;
+                color: #fff;
+                font-size: 14px;
+            }
+            .org-tag{
+                color:#fff;
+                font-family: "Oswald-Regular-unhinted";
+                margin-top: 40px;
+                text-align: center;
+                &>div{
+                    border-right: 1px solid rgba(255,255,255,0.3);
+                }
+                .s-txt{
+                    position: relative;
+                    top: -16px;
+                }
+            }
         }
     }
 }
 .home-bg4{
     background: url('../images/img/kpn.jpg') no-repeat center center;
+    padding-top: 200px;
+    color: #fff;
+    text-align: center;
+    .bg4-content{
+        width: 100%;
+        max-width: 1600px;
+        min-width: 0px;
+        height: auto;
+        max-height: none;
+        min-height: 500px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        .ditu{
+            background: url('../images/img/mappic2new.png') no-repeat center center;
+            width: 876px;
+            height: 588px;
+            position: relative;
+            background-size: 760px 410px;
+            float: left;
+            animation-name: fadeInLeft;
+            animation-duration: 1.3s;
+            animation-delay: 1.2s;
+            animation-fill-mode: both;
+        }
+        .con{
+            width: 36%;
+            color: #fff;
+            margin-top: 10%;
+            text-align: left;
+            float: left;
+            animation-name: fadeInRight;
+            animation-duration: 1.3s;
+            animation-delay: 1.2s;
+            animation-fill-mode: both;
+            .img{
+                width: 409px;
+                border: 7px solid #da251d;
+            }
+        }
+    }
 }
 .home-bg5{
      background: url('../images/img/bgnn3.jpg') no-repeat center center;
+    .bg5-content{
+        width: 100%;
+        max-width: 1314px;
+        color: #fff;
+        min-width: 0px;
+        height: auto;
+        max-height: none;
+        min-height: 192px;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+        display: flex;
+        .left-cnt{
+            margin-left: 0px;
+            clear: left;
+            margin-right: 0px;
+            width: 33.42%;
+        }
+        .right-cnt{
+            width: 66.58%;
+            .w-grid{
+                animation-name: fadeInRight;
+                animation-duration: 1.5s;
+                animation-delay: 1s;
+                animation-fill-mode: both;
+                background: rgba(218,37,29,0.7);
+                padding: 60px;
+            }
+        }
+    }
  }
 
