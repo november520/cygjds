@@ -581,8 +581,8 @@ button.kc-button {
           font-family: 'Cairo', sans-serif; }
           .home-one .header .kc-navbar li > a:hover, .home-one .header .kc-navbar li > a:active, .home-one .header .kc-navbar li > a:focus {
             cursor: pointer;
-            background: #444 !important;
-            color: #9d844e; }
+            background: #da251d !important;
+            color: #fff !important; }
         .home-one .header .kc-navbar li.uk-open > a {
           background: none;
           color: #9d844e; }
