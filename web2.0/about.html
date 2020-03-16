@@ -16,16 +16,16 @@
         <link rel="stylesheet" href="css/responsive.css" type="text/css">
         <link rel="stylesheet/less" type="text/css" href="./css/public.less" />
         <link rel="stylesheet/less" type="text/css" href="./css/about.less" />
+        <link href="./node_modules/swiper/css/swiper.min.css" rel="stylesheet" type="text/css">
         <!-- END BEGIN TEMPLATE LAYOUT STYLES -->
         <link rel="shortcut icon" href="images/favicon.ico" />
     </head>
     <body>
         <div class="home-one">
-        <div class="header">
+        <div class="header about-header">
             <div class="">
-                <img src="./images/img/yi.png" alt="">
-                
                 <nav class="kc-navbar uk-clearfix">
+                    <img class="logo" src="./images/img/yi.png" alt="">
                     <ul class="uk-navbar-nav menu-primary uk-hidden-small t-right about-header" style="float:right;">
                         <li>
                             <a class="black" href="index.html">首页</a>
@@ -56,6 +56,14 @@
                 </nav>
             </div>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/img/cc2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/img/hhh.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
     </div>
         <!--END BEGIN FOOTER -->
         <!-- BEGIN CORE PLUGINS -->
@@ -67,9 +75,29 @@
         <script src="plugins/uikit/js/components/slider.min.js" type="text/javascript"></script>
         <script src="plugins/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
         <script src="plugins/uikit/js/components/grid.min.js" type="text/javascript"></script>
+        <script src="./node_modules/swiper/js/swiper.min.js"></script>
         <!-- END BEGIN COMPONENT UIKIT-->
         <!-- BEGIN TEMPLATE LAYOUT SCRIPTS -->
         <script src="js/main.js" type="text/javascript"></script>
+        <script type="javascript">
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+
+                // pagination: {
+                //     el: '.swiper-pagination',
+                //     clickable: true,
+                // },
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
+            });
+        </script>
         <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
     </body>
 </html>
