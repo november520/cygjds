@@ -111,6 +111,55 @@
 .prc-module{
     padding: 40px 20px;
     background: #fff;
+    .select-type{
+        display: inline-block;
+        width: 81.5%;
+        margin-left: calc(~"9.25%");
+    }
+    .prc-content-module{
+        max-height: none;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        min-height: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1580px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-width: 0px;
+        height: auto;
+        padding-right: 0px;
+        .prc-li{
+            width: calc(~"100% / 3 - 10px");
+            padding: 10px;
+            display: inline-block;
+            .prc-img{
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 430px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    transition: all .5s ease;
+                }
+            }
+            .txt-module{
+                border: 1px solid #f2f2f2;
+                padding: 20px 20px 40px 20px;
+                .title{
+                    border-bottom: 1px solid #e5e5e5;
+                }
+                .go-detail{
+                    line-height: 40px;
+                    display: flex;
+                    color: #777;
+                }
+            }
+        }
+    }
 }
 .black-btn{
     display: inline-block;
@@ -125,3 +174,34 @@
 .black-btn:hover{
     background-color: rgba(218,36,28,1);
 }
+.industry-module{
+    padding: 20px;
+    .industry-cnt{
+        width: auto;
+        max-width: 1300px;
+        min-width: 0px;
+        height: auto;
+        max-height: none;
+        min-height: 0px;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        img{
+            width: 100%;
+            height: 300px;
+            transition: all .5s ease;
+        }
+        .txt-module{
+            position: relative;
+            top: calc(~"50% - 60px");
+            height: 60px;
+            left: 60px;
+        }
+    }
+}
+
