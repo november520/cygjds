@@ -1,31 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>曹一案例</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="" name="description" content="曹一案例">
-    <meta content="" name="author" content="曹一案例">
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
     <link href="plugins/uikit/css/uikit.min.css" rel="stylesheet" type="text/css">
     <!-- BEGIN TEMPLATE LAYOUT STYLES -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/public.css" />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-    <link href="./node_modules/swiper/css/swiper.min.css" rel="stylesheet" type="text/css">
-    <!-- END BEGIN TEMPLATE LAYOUT STYLES -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<div class="home-one">
-    <div class="header about-header">
+    <div class="home-one">
+        <div class="header about-header">
         <div class="">
             <nav class="kc-navbar uk-clearfix">
-                <img class="logo" src="./images/img/yi.png" alt="">
+                <img class="logo mleft-120" src="./images/img/yi.png" alt="">
                 <ul class="uk-navbar-nav menu-primary uk-hidden-small t-right about-header" style="float:right;">
                     <li>
                         <a class="black" href="index.html">首页</a>
@@ -56,15 +47,7 @@
             </nav>
         </div>
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/img/hhh.jpg" alt=""></div>
-        </div>
-    </div>
-    <div class="quality-module">
-        <div class="content">
-            <img class="mtop-50" src="./images/img/gyy.jpg" alt="">
-        </div>
+        <div class="map" id="container"></div>
     </div>
     <div class="bottom-module">
         <div class="content">
@@ -87,30 +70,20 @@
             </div>
         </div>
     </div>
-</div>
-<!--END BEGIN FOOTER -->
-<!-- BEGIN CORE PLUGINS -->
+</body>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=7f927abe7edff422c66ea1af48017f76"></script>
 <script src="plugins/jquery/jquery-1.12.4.min.js" type="text/javascript"></script>
 <script src="plugins/uikit/js/uikit.min.js" type="text/javascript"></script>
-<!-- END CORE PLUGINS -->
-<!-- END BEGIN COMPONENT UIKIT-->
-<script src="plugins/uikit/js/components/slider.min.js" type="text/javascript"></script>
-<script src="plugins/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
-<script src="plugins/uikit/js/components/grid.min.js" type="text/javascript"></script>
-<script src="./node_modules/swiper/js/swiper.min.js"></script>
-<!-- END BEGIN COMPONENT UIKIT-->
-<!-- BEGIN TEMPLATE LAYOUT SCRIPTS -->
-<script src="js/main.js" type="text/javascript"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-    })
+    var map = new AMap.Map('container', {
+        resizeEnable: true, //是否监控地图容器尺寸变化
+        zoom:11, //初始化地图层级
+        center: [113.2074800000,22.5903500000] //初始化地图中心点
+    });
+    // var url = 'https://webapi.amap.com/maps?v=1.4.15&key=7f927abe7edff422c66ea1af48017f76&callback=onLoad';
+    // var jsapi = doc.createElement('script');
+    // jsapi.charset = 'utf-8';
+    // jsapi.src = url;
+    // document.head.appendChild(jsapi);
 </script>
-<!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
-</body>
 </html>
