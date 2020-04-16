@@ -53,6 +53,9 @@
 .mtop-30{
     margin-top: 30px;
 }
+.mtop-40{
+    margin-top: 40px;
+}
 .mtop-50{
     margin-top: 50px;
 }
@@ -299,6 +302,11 @@
 .news-module{
     padding:40px 20px;
 }
+.logo{
+    width: 280px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
 .news-module .news-content{
     max-height: none;
     padding-top: 0px;
@@ -315,6 +323,9 @@
     height: auto;
     padding-right: 0px;
 
+}
+.mtop-140{
+    margin-top: 140px;
 }
 .news-module .news-content .news-li{
     display: flex;
