@@ -14,8 +14,9 @@
     <!-- BEGIN TEMPLATE LAYOUT STYLES -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
     <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
     <link href="./node_modules/swiper/css/swiper.min.css" rel="stylesheet" type="text/css">
     <!-- END BEGIN TEMPLATE LAYOUT STYLES -->
     <link rel="shortcut icon" href="images/favicon.ico" />
@@ -56,49 +57,73 @@
             </nav>
         </div>
     </div>
-    <div class="swiper-container">
+    <div class="top-swiper-container swiper-container">
         <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/img/case.jpg" alt=""></div>
             <div class="swiper-slide"><img src="./images/img/case.jpg" alt=""></div>
         </div>
     </div>
     <div class="prc-module">
         <div class="pleft-30">
-            <div class="mtop-20">
-                <div class="prc-content-module">
-                    <div class="mleft-10">
-                        <div class="black-btn">
-                            国内案例
-                        </div>
-                        <div class="mleft-20 black-btn">
-                            国际案例
-                        </div>
-                    </div>
+            <div class="mtop-20 prc-detail-content">
+                <div class="block">
+                    <!--<div class="mleft-10">-->
+                        <!--<div class="black-btn">-->
+                            <!--国内案例-->
+                        <!--</div>-->
+                        <!--<div class="mleft-20 black-btn">-->
+                            <!--国际案例-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div class="mtop-40">
-                        <div class="prc-li">
-                            <div class="prc-img">
-                                <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                        <div class="prc-detail-li swiper-container2">
+                            <div class="prc-img swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="prc-detail-in">
+                            <div class="title t-left pleft-20 font-34 f-weight">意大利</div>
+                            <div class="mtop-20">
+                                <div class="swiper-container-card">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="in"></div>
+                    </div>
+                    <div class="mtop-40 t-left">
+                        <div class="detai-btn">详细介绍</div>
                     </div>
                 </div>
+
             </div>
-            <div>
-                <!--<ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>-->
-                    <!--<li><a href="#"><span uk-pagination-previous>-->
-                        <!--<-->
-                    <!--</span></a></li>-->
-                    <!--<li><a href="#">1</a></li>-->
-                    <!--<li class="uk-disabled"><span>...</span></li>-->
-                    <!--<li><a href="#">5</a></li>-->
-                    <!--<li><a href="#">6</a></li>-->
-                    <!--<li class="uk-active"><span>7</span></li>-->
-                    <!--<li><a href="#">8</a></li>-->
-                    <!--<li><a href="#"><span uk-pagination-next>-->
-                        <!--&gt;-->
-                    <!--</span></a></li>-->
-                <!--</ul>-->
-            </div>
+
         </div>
     </div>
 </div>
@@ -123,7 +148,32 @@
             delay: 3000,
             disableOnInteraction: false,
         },
+
     })
+    var swiper2 = new Swiper('.swiper-container2', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    var swiper3 = new Swiper('.swiper-container-card', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
 </script>
 <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
 </body>

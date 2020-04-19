@@ -1,7 +1,5 @@
 .about-header{
   color:#333 !important;
-
-
 }
 .about-header .uk-navbar-nav a{
     color: #333 !important;
@@ -10,7 +8,6 @@
 .swiper-container{
   width: 100%;
   height: 400px;
-
 }
 .swiper-container .swiper-slide img{
     width: 100%;

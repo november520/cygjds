@@ -123,8 +123,6 @@
     min-height: 200px;
     transition: 300ms;
     transform: scale(0.8);
-
-
 }
 .home-bg2 .bg2-content .swiper-slide .img{
     display: block;
@@ -151,9 +149,6 @@
 }
 .home-bg3  .txt-content{
     padding: 250px 10%;
-
-
-
 }
 .home-bg3  .txt-content .org-tag{
     color:#fff;

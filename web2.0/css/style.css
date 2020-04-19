@@ -549,7 +549,7 @@ button.kc-button {
   .home-one .header {
     /*background-color: #100909;*/
     position: relative;
-    right: 100px;
+    /*right: 100px;*/
     }
     .home-one .header .kc-navbar {
       margin-left: -15px; }
