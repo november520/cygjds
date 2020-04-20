@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
-<div class="home-one">
+<div id="app" class="home-one">
     <div class="header about-header">
         <div class="">
             <nav class="kc-navbar uk-clearfix">
@@ -63,113 +63,15 @@
     </div>
     <div class="prc-module">
         <div class="pleft-30">
-            <div class="select-type">
-                <div class="black-btn">
-                    国内案例
-                </div>
-                <div class="mleft-20 black-btn">
-                    国际案例
-                </div>
-            </div>
             <div class="mtop-40">
                 <div class="prc-content-module">
-                    <div class="prc-li">
+                    <div class="prc-li" v-for="(item,index) in list">
                         <div class="prc-img">
-                            <img src="./images/img/z32Ite2SSne6pLyRBP6k1A.jpg" alt="">
+                            <img :src="item.path" alt="">
                         </div>
                         <div class="txt-module">
                             <div class="title">
-                                2020成都欢乐田园梦幻灯会
-                            </div>
-                            <div class="go-detail">
-                                <div class="flex-1">
-                                    <span>Details</span>
-                                </div>
-                                <div class="flex-1 t-right">
-                                    <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prc-li">
-                        <div class="prc-img">
-                            <img src="./images/img/dvsHt5qZQsadDWL8nEjigg.jpg" alt="">
-                        </div>
-                        <div class="txt-module">
-                            <div class="title">
-                                2020成都欢乐田园梦幻灯会
-                            </div>
-                            <div class="go-detail">
-                                <div class="flex-1">
-                                    <span>Details</span>
-                                </div>
-                                <div class="flex-1 t-right">
-                                    <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prc-li">
-                        <div class="prc-img">
-                            <img src="./images/img/__SAGJ1xRuq5oRUuQ2yswg.jpg" alt="">
-                        </div>
-                        <div class="txt-module">
-                            <div class="title">
-                                2020成都欢乐田园梦幻灯会
-                            </div>
-                            <div class="go-detail">
-                                <div class="flex-1">
-                                    <span>Details</span>
-                                </div>
-                                <div class="flex-1 t-right">
-                                    <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prc-li">
-                        <div class="prc-img">
-                            <img src="./images/img/ixJgKvwRTyKzsCcS4CL3zg.jpg" alt="">
-                        </div>
-                        <div class="txt-module">
-                            <div class="title">
-                                2020成都欢乐田园梦幻灯会
-                            </div>
-                            <div class="go-detail">
-                                <div class="flex-1">
-                                    <span>Details</span>
-                                </div>
-                                <div class="flex-1 t-right">
-                                    <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prc-li">
-                        <div class="prc-img">
-                            <img src="./images/img/SkYROZ4UQOu4-prK0EVNlg.jpg" alt="">
-                        </div>
-                        <div class="txt-module">
-                            <div class="title">
-                                2020成都欢乐田园梦幻灯会
-                            </div>
-                            <div class="go-detail">
-                                <div class="flex-1">
-                                    <span>Details</span>
-                                </div>
-                                <div class="flex-1 t-right">
-                                    <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="prc-li">
-                        <div class="prc-img">
-                            <img src="./images/img/ZAM-quDZRlaAJDCgUIllzQ.jpg" alt="">
-                        </div>
-                        <div class="txt-module">
-                            <div class="title">
-                                2020成都欢乐田园梦幻灯会
+                                {{item.text}}
                             </div>
                             <div class="go-detail">
                                 <div class="flex-1">
@@ -185,16 +87,12 @@
             </div>
             <div>
                 <ul class="uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
-                    <li><a href="#"><span uk-pagination-previous>
+                    <li><a @click="togglePage('prev')"><span uk-pagination-previous>
                         <
                     </span></a></li>
-                    <li><a href="#">1</a></li>
-                    <li class="uk-disabled"><span>...</span></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li class="uk-active"><span>7</span></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#"><span uk-pagination-next>
+                    <li><a @click="toggle(1)" :class="{'active':page==1,page}"><span>1</span></a></li>
+                    <li><a @click="toggle(2)" :class="{'active':page==2,page}"><span>2</span></a></li>
+                    <li><a @click="togglePage('next')"><span uk-pagination-next>
                         >
                     </span></a></li>
                 </ul>
@@ -211,6 +109,7 @@
 <script src="plugins/uikit/js/components/slider.min.js" type="text/javascript"></script>
 <script src="plugins/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
 <script src="plugins/uikit/js/components/grid.min.js" type="text/javascript"></script>
+<script src="./node_modules/vue/dist/vue.min.js"></script>
 <script src="./node_modules/swiper/js/swiper.min.js"></script>
 <!-- END BEGIN COMPONENT UIKIT-->
 <!-- BEGIN TEMPLATE LAYOUT SCRIPTS -->
@@ -223,6 +122,96 @@
             delay: 3000,
             disableOnInteraction: false,
         },
+    });
+    var app = new Vue({
+        el:"#app",
+        data:{
+            prc:{
+                "1": [
+                    {
+                        "path": "./images/v2/dengguangjie/junyunhui/3.jpg",
+                        "text": "2019军运会"
+                    },{
+                        "path": "./images/v2/dengguangjie/zhangye/9.jpg",
+                        "text": "2020张掖"
+                    },{
+                        "path": "./images/v2/denghui/biekesitan/8.jpg",
+                        "text": "2020乌兹别克斯坦"
+                    },{
+                        "path": "./images/v2/denghui/lanzhou/10.jpg",
+                        "text": "2020兰州"
+                    },{
+                        "path": "./images/v2/denghui/lanzhou/20.jpg",
+                        "text": "2020兰州"
+                    },{
+                        "path": "./images/v2/denghui/lanzhou/21.jpg",
+                        "text": "2020兰州"
+                    }
+                ],
+                "2": [
+                    {
+                        "path": "./images/v2/dengguangjie/zhangye/22.jpg",
+                        "text": "2020张掖"
+                    },{
+                        "path": "./images/v2/meichen/changlong/8.jpg",
+                        "text": "2020长隆"
+                    },{
+                        "path": "./images/v2/meichen/changsha/4.jpg",
+                        "text": "2020长沙"
+                    },{
+                        "path": "./images/v2/denghui/zhangye/15.jpg",
+                        "text": "2020张掖"
+                    },{
+                        "path": "./images/v2/meichen/dongguan/4.jpg",
+                        "text": "2020东莞"
+                    },{
+                        "path": "./images/v2/meichen/shunde/4.jpg",
+                        "text": "2020顺德"
+                    }
+                ]
+            },
+            list:[
+                {
+                    "path": "./images/v2/dengguangjie/junyunhui/3.jpg",
+                    "text": "2019军运会"
+                },{
+                    "path": "./images/v2/dengguangjie/zhangye/9.jpg",
+                    "text": "2020张掖"
+                },{
+                    "path": "./images/v2/denghui/biekesitan/8.jpg",
+                    "text": "2020乌兹别克斯坦"
+                },{
+                    "path": "./images/v2/denghui/lanzhou/10.jpg",
+                    "text": "2020兰州"
+                },{
+                    "path": "./images/v2/denghui/lanzhou/20.jpg",
+                    "text": "2020兰州"
+                },{
+                    "path": "./images/v2/denghui/lanzhou/21.jpg",
+                    "text": "2020兰州"
+                }
+            ],
+            page:1,
+
+        },
+        methods: {
+            toggle:function (value){
+                this.page = value;
+                this.list = this.prc[value];
+            },
+            togglePage:function(value){
+                    if(value=='prev'){
+                        if(this.page>1){
+                            this.page--
+                        }
+                    }else {
+                        if (this.page < 2) {
+                            this.page++
+                        }
+                    }
+                this.list = this.prc[this.page]
+                }
+        }
     })
 </script>
 <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->

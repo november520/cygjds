@@ -386,3 +386,7 @@
     height: 400px;
     margin-bottom: 200px;
 }
+.uk-margin-medium-top li .page.active{
+    background: #00a8e6;
+    color: #fff;
+}
