@@ -2,11 +2,11 @@
 <html>
 	<script src="chrome-extension://dpkgacdhagkgdhgmbfdhbmgdgnjibodb/js/common/commonext.js" type="text/javascript"></script><script src="chrome-extension://dpkgacdhagkgdhgmbfdhbmgdgnjibodb/injected/injected.js" type="text/javascript"></script><script src="chrome-extension://dpkgacdhagkgdhgmbfdhbmgdgnjibodb/injected/ready.js" type="text/javascript"></script><script src="chrome-extension://dpkgacdhagkgdhgmbfdhbmgdgnjibodb/injected/msgbox.js" type="text/javascript"></script><!-- BEGIN HEAD --><head>
         <meta charset="UTF-8">
-        <title>曹一国际灯饰</title>
+        <title>曹一文旅灯饰灯饰</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport">
-        <meta content="" name="description" content="曹一国际灯饰">
-        <meta content="" name="author" content="曹一国际灯饰">
+        <meta content="" name="description" content="曹一文旅灯饰">
+        <meta content="" name="author" content="曹一文旅灯饰">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
         <link href="plugins/uikit/css/uikit.min.css" rel="stylesheet" type="text/css">
@@ -47,7 +47,7 @@
         <!-- BEGIN HEADER -->
 
 
-        <div class="swiper-container swiper-main">
+        <div id="app" class="swiper-container swiper-main">
             <div class="home-one">
                 <div class="header">
                     <div class="">
@@ -109,89 +109,11 @@
                         <div class="bg2-content">
                             <div class="page2-swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/dengguangjie/junyunhui/3.jpg" alt="">
+                                    <div class="swiper-slide hand" v-for="(item,index) in list">
+                                        <div @click="detail(item.id)">
+                                            <img class="img" :src="item.path" alt="">
                                         </div>
-                                        <div class="t-left white">2019军运会</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/dengguangjie/zhangye/9.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020张掖</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/biekesitan/8.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020乌兹别克斯坦</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/jiuquan/8.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020酒泉</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/lanzhou/10.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020兰州</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/lanzhou/20.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020兰州</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/lanzhou/21.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020兰州</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/denghui/zhangye/15.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020张掖</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/meichen/changlong/8.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020长隆</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/meichen/changsha/4.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020长沙</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/meichen/dongguan/4.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020东莞</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div>
-                                            <img class="img" src="./images/v2/meichen/shunde/4.jpg" alt="">
-                                        </div>
-                                        <div class="t-left white">2020顺德</div>
-                                        <div class="t-left white">DRAGON CULETURE</div>
+                                        <div class="mtop-20 t-left white font-26">{{item.text}}</div>
                                     </div>
                                 </div>
                             </div>
@@ -216,14 +138,14 @@
                                             <div class="org-title flex">
                                                 <div class="">
                                                     <p class="txt-1">ZIGONG CITY DRAGON CULTURE&ARTS CO.LTD</p>
-                                                    <p class="txt-2 mtop-15">曹一国际灯光有限公司</p>
+                                                    <p class="txt-2 mtop-15">曹一文旅灯饰有限公司</p>
                                                 </div>
                                                 <div class="default-btn mleft-65">
                                                     查看更多
                                                 </div>
                                             </div>
                                             <div class="org-content">
-                                                中山市曹一灯饰有限公司，成立于2016年，坐落于中山市横栏镇新茂工业区聚龙路8号首层第六卡，是一家专注于照明灯具的研发、生产和销售的实力企业。公司在过去4年的发展和沉淀中，逐渐形成了非标灯具定制、彩灯彩车彩船巡游工程、艺术景观雕塑工程、商业美陈、创意灯光秀、城市亮化等多个发展方向，云集了创意策划、艺术设计、产品研发和行业管理方面的人才100余人，组建了多支高素质施工队伍300余人，年产值3000多万。
+                                                中山市曹一文旅灯饰有限公司，成立于2016年，坐落于中山市横栏镇新茂工业区聚龙路8号首层第六卡，是一家专注于照明灯具的研发、生产和销售的实力企业。公司在过去4年的发展和沉淀中，逐渐形成了非标灯具定制、彩灯彩车彩船巡游工程、艺术景观雕塑工程、商业美陈、创意灯光秀、城市亮化等多个发展方向，云集了创意策划、艺术设计、产品研发和行业管理方面的人才100余人，组建了多支高素质施工队伍300余人，年产值3000多万。
                                                 公司一直秉承“诚信为本，服务至上”的理念。企业代码91442000MA4UTJ3J6T
                                             </div>
                                             <!--<div class="org-tag flex">-->
@@ -280,7 +202,7 @@
                                 <div class="w-grid ">
                                     <div class="flex">
                                         <div class="flex-1">
-                                            <div class="font-26">曹一国际有限公司</div>
+                                            <div class="font-26">曹一文旅灯饰有限公司</div>
                                             <div class="mtop-10 font-14">公司地址：广东省中山市横栏镇三沙长安北路187号</div>
                                             <div class="mtop-10">服务热线：0760-87660085</div>
                                         </div>
@@ -288,7 +210,7 @@
 
                                         </div>
                                     </div>
-                                    <p class="font-14 t-center">©曹一国际有限公司</p>
+                                    <p class="font-14 t-center">©曹一文旅灯饰有限公司</p>
                                 </div>
                             </div>
                         </div>
@@ -327,6 +249,7 @@
         <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
         <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
         <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+        <script src="./node_modules/vue/dist/vue.min.js"></script>
         <script src="./node_modules/swiper/js/swiper.min.js"></script>
 		<script src="js/scrollReveal.js" type="text/javascript"></script>
         <!-- END BEGIN PAGE LEVEL PLUGINS -->
@@ -334,62 +257,132 @@
         <script src="js/main.js" type="text/javascript"></script>
         <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
 		<script>
-			jQuery(document).ready(function($) {
-				if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-					window.scrollReveal = new scrollReveal({reset: true});
-				};
-			});
-            var swiper1 = new Swiper('.swiper-container',{
-                direction : 'vertical',
-                followFinger : false,
-                speed:800,
-                mousewheel: true,
-                pagination : {
-                    el:'.swiper-pagination',
-                },
-                on:{
-                    init:function(swiper){
-                        slide=this.slides.eq(0);
-                        slide.addClass('ani-slide');
-                    },
-                    transitionStart: function(){
-                        for(i=0;i<this.slides.length;i++){
-                            slide=this.slides.eq(i);
-                            slide.removeClass('ani-slide');
-                        }
-                    },
-                    transitionEnd: function(){
-                        slide=this.slides.eq(this.activeIndex);
-                        slide.addClass('ani-slide');
 
-                    },
-                    slideNextTransitionEnd: function(){
-                        // alert('切换结束了');
-                    },
+            var app = new Vue({
+                el:"#app",
+                data:{
+                    list:[
+                        {
+                            "path": "./images/v2/dengguangjie/junyunhui/3.jpg",
+                            "text": "2019军运会",
+                            "id": "1"
+                        },
+                        {
+                            "path": "./images/v2/dengguangjie/zhangye/9.jpg",
+                            "text": "2020张掖",
+                            "id": "2"
+                        },
+                        {
+                            "path": "./images/v2/denghui/biekesitan/8.jpg",
+                            "text": "2020乌兹别克斯坦",
+                            "id": "3"
+                        },
+                        {
+                            "path": "./images/v2/denghui/jiuquan/8.jpg",
+                            "text": "2020酒泉",
+                            "id": "4"
+                        },
+                        {
+                            "path": "./images/v2/denghui/lanzhou/10.jpg",
+                            "text": "2020兰州",
+                            "id": "5"
+                        },
+                        {
+                            "path": "./images/v2/denghui/lanzhou/20.jpg",
+                            "text": "2020兰州",
+                            "id": "6"
+                        },
+                        {
+                            "path": "./images/v2/denghui/lanzhou/21.jpg",
+                            "text": "2020兰州",
+                            "id": "7"
+                        },
+                        {
+                            "path": "./images/v2/denghui/zhangye/15.jpg",
+                            "text": "2020张掖",
+                            "id": "8"
+                        },
+                        {
+                            "path": "./images/v2/meichen/changlong/8.jpg",
+                            "text": "2020长隆",
+                            "id": "9"
+                        },
+                        {
+                            "path": "./images/v2/meichen/changsha/4.jpg",
+                            "text": "2020长沙",
+                            "id": "10"
+                        },
+                        {
+                            "path": "./images/v2/meichen/dongguan/4.jpg",
+                            "text": "2020东莞",
+                            "id": "11"
+                        },
+                        {
+                            "path": "./images/v2/meichen/shunde/4.jpg",
+                            "text": "2020顺德",
+                            "id": "12"
+                        }
+                    ]
+                },
+                mounted:function(){
+                    var swiper1 = new Swiper('.swiper-container',{
+                        direction : 'vertical',
+                        followFinger : false,
+                        speed:800,
+                        mousewheel: true,
+                        pagination : {
+                            el:'.swiper-pagination',
+                        },
+                        on:{
+                            init:function(swiper){
+                                slide=this.slides.eq(0);
+                                slide.addClass('ani-slide');
+                            },
+                            transitionStart: function(){
+                                for(i=0;i<this.slides.length;i++){
+                                    slide=this.slides.eq(i);
+                                    slide.removeClass('ani-slide');
+                                }
+                            },
+                            transitionEnd: function(){
+                                slide=this.slides.eq(this.activeIndex);
+                                slide.addClass('ani-slide');
+
+                            },
+                            slideNextTransitionEnd: function(){
+                                // alert('切换结束了');
+                            },
+                        }
+                    });
+                    var swiper2 = new Swiper('.swiper-container2', {
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                    });
+                    var swiper3 = new Swiper('.page2-swiper-container', {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        loop: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                },
+                methods:{
+                    detail:function(id){
+                        window.location.href = `product-detail.html?id=${id}`;
+                    }
                 }
-            });
-            var swiper2 = new Swiper('.swiper-container2', {
-                spaceBetween: 30,
-                centeredSlides: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-            });
-            var swiper3 = new Swiper('.page2-swiper-container', {
-                slidesPerView: 4,
-                spaceBetween: 30,
-                centeredSlides: true,
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-            });
+            })
 		</script>
 
 

@@ -390,3 +390,6 @@
     background: #00a8e6;
     color: #fff;
 }
+.hand{
+    cursor: pointer;
+}
