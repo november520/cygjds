@@ -265,6 +265,9 @@
 .black-btn:hover{
     background-color: rgba(218,36,28,1);
 }
+.black-btn.active{
+    background-color: rgba(218,36,28,1);
+}
 .industry-module{
     padding: 20px;
 
