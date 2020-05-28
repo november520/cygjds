@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 <body>
-<div class="home-one">
+<div id="app" class="home-one">
     <div class="header about-header">
         <div class="">
             <nav class="kc-navbar uk-clearfix">
@@ -66,12 +66,12 @@
         <div class="industry-cnt">
             <div class="flex">
                 <div class="flex-1">
-                    <img src="./images/img/industry/prc1.jpg" alt="">
+                    <img src="./images/v2/keji/1.jpg" alt="">
                 </div>
                 <div class="flex-1">
                     <div class="txt-module">
                         <div class="font-20">科技互动</div>
-                        <div class="mtop-10 font-14 gray">查看更多</div>
+                        <div class="mtop-10 font-14 gray hand" @click="more('technology')">查看更多</div>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <div class="flex-1">
                     <div class="txt-module">
                         <div class="font-20">商业美陈</div>
-                        <div class="mtop-10 font-14 gray">查看更多</div>
+                        <div class="mtop-10 font-14 gray hand" @click="more('meichen')">查看更多</div>
                     </div>
                 </div>
                 <div class="flex-1">
@@ -93,7 +93,7 @@
                 <div class="flex-1">
                     <div class="txt-module">
                         <div class="font-20">灯会灯展</div>
-                        <div class="mtop-10 font-14 gray">查看更多</div>
+                        <div class="mtop-10 font-14 gray hand" @click="more('denghui')">查看更多</div>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 <div class="flex-1">
                     <div class="txt-module">
                         <div class="font-20">彩车彩船</div>
-                        <div class="mtop-10 font-14 gray">查看更多</div>
+                        <div class="mtop-10 font-14 gray hand" @click="more('caiche')">查看更多</div>
                     </div>
                 </div>
                 <div class="flex-1">
@@ -116,7 +116,7 @@
                 <div class="flex-1">
                     <div class="txt-module">
                         <div class="font-20">景观亮化</div>
-                        <div class="mtop-10 font-14 gray">查看更多</div>
+                        <div class="mtop-10 font-14 gray hand" @click="more('lianghua')">查看更多</div>
                     </div>
                 </div>
             </div>
@@ -128,8 +128,9 @@
                 <div class="flex-1" style="border-right:1px solid #fff">
                     <div>CONTACT INFORMATION</div>
                     <div>联系方式</div>
-                    <div>中国广东中山横栏镇三沙村长安北路187号首层第3卡</div>
+                    <div>中国广东中山横栏镇三沙村长安北路187号首层</div>
                     <div>0760-87660085</div>
+                    <div>13560658887</div>
                 </div>
                 <div class="flex-1 pleft-40">
                     <div>OFFICIAL ACCOUNTS</div>
@@ -151,19 +152,32 @@
 <script src="plugins/uikit/js/components/slider.min.js" type="text/javascript"></script>
 <script src="plugins/uikit/js/components/slideshow.min.js" type="text/javascript"></script>
 <script src="plugins/uikit/js/components/grid.min.js" type="text/javascript"></script>
+<script src="./node_modules/vue/dist/vue.min.js"></script>
 <script src="./node_modules/swiper/js/swiper.min.js"></script>
 <!-- END BEGIN COMPONENT UIKIT-->
 <!-- BEGIN TEMPLATE LAYOUT SCRIPTS -->
 <script src="js/main.js" type="text/javascript"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+    var app = new Vue({
+        el:"#app",
+        mounted:function(){
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+            })
         },
+        methods:{
+            more(value){
+                window.location.href = `industry-type.html?type=${value}`;
+            }
+        }
     })
+
+
 </script>
 <!-- END BEGIN TEMPLATE LAYOUT SCRIPTS -->
 </body>

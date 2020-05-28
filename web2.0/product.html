@@ -75,7 +75,7 @@
                             </div>
                             <div class="go-detail">
                                 <div class="flex-1">
-                                    <span>Details</span>
+                                    <span class="hand" @click="detail(item)">Details</span>
                                 </div>
                                 <div class="flex-1 t-right">
                                     <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
@@ -123,65 +123,83 @@
                 "1": [
                     {
                         "path": "./images/v2/dengguangjie/junyunhui/3.jpg",
-                        "text": "2019军运会"
+                        "text": "2019军运会",
+                        "id": "1"
                     },{
                         "path": "./images/v2/dengguangjie/zhangye/9.jpg",
-                        "text": "2020张掖"
+                        "text": "2020张掖",
+                        "id": "2"
                     },{
                         "path": "./images/v2/denghui/biekesitan/8.jpg",
-                        "text": "2020乌兹别克斯坦"
+                        "text": "2020乌兹别克斯坦",
+                        "id": "3"
                     },{
                         "path": "./images/v2/denghui/lanzhou/10.jpg",
-                        "text": "2020兰州"
+                        "text": "2020兰州",
+                        "id": "5"
                     },{
                         "path": "./images/v2/denghui/lanzhou/20.jpg",
-                        "text": "2020兰州"
+                        "text": "2020兰州",
+                        "id": "6"
                     },{
                         "path": "./images/v2/denghui/lanzhou/21.jpg",
-                        "text": "2020兰州"
+                        "text": "2020兰州",
+                        "id": "7"
                     }
                 ],
                 "2": [
                     {
                         "path": "./images/v2/dengguangjie/zhangye/22.jpg",
-                        "text": "2020张掖"
+                        "text": "2020张掖",
+                        "id": "2"
                     },{
                         "path": "./images/v2/meichen/changlong/8.jpg",
-                        "text": "2020长隆"
+                        "text": "2020长隆",
+                        "id": "9"
                     },{
                         "path": "./images/v2/meichen/changsha/4.jpg",
-                        "text": "2020长沙"
+                        "text": "2020长沙",
+                        "id":"10"
                     },{
                         "path": "./images/v2/denghui/zhangye/15.jpg",
-                        "text": "2020张掖"
+                        "text": "2020张掖",
+                        "id":"8"
                     },{
                         "path": "./images/v2/meichen/dongguan/4.jpg",
-                        "text": "2020东莞"
+                        "text": "2020东莞",
+                        "id":"11"
                     },{
                         "path": "./images/v2/meichen/shunde/4.jpg",
-                        "text": "2020顺德"
+                        "text": "2020顺德",
+                        "id":"12"
                     }
                 ]
             },
             list:[
                 {
                     "path": "./images/v2/dengguangjie/junyunhui/3.jpg",
-                    "text": "2019军运会"
+                    "text": "2019军运会",
+                    "id": "1"
                 },{
                     "path": "./images/v2/dengguangjie/zhangye/9.jpg",
-                    "text": "2020张掖"
+                    "text": "2020张掖",
+                    "id": "2"
                 },{
                     "path": "./images/v2/denghui/biekesitan/8.jpg",
-                    "text": "2020乌兹别克斯坦"
+                    "text": "2020乌兹别克斯坦",
+                    "id": "3"
                 },{
                     "path": "./images/v2/denghui/lanzhou/10.jpg",
-                    "text": "2020兰州"
+                    "text": "2020兰州",
+                    "id": "5"
                 },{
                     "path": "./images/v2/denghui/lanzhou/20.jpg",
-                    "text": "2020兰州"
+                    "text": "2020兰州",
+                    "id": "6"
                 },{
                     "path": "./images/v2/denghui/lanzhou/21.jpg",
-                    "text": "2020兰州"
+                    "text": "2020兰州",
+                    "id": "7"
                 }
             ],
             page:1,
@@ -213,7 +231,10 @@
                         }
                     }
                 this.list = this.prc[this.page]
-                }
+            },
+            detail(row){
+                window.location.href = `product-detail.html?id=${row.id}`;
+            }
         }
     })
 </script>

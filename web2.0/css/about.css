@@ -137,3 +137,80 @@
   margin-right: 2.2%;
   width: 30%;
 }
+.card img{
+
+}
+.team-left-module{
+  background: rgba(179,55,56,1);
+  color: #fff;
+  margin-top: 20px;
+  padding: 40px;
+}
+.chairman{
+  background: #fff url("../images/ceo.jpg") no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 300px;
+}
+.room{
+  background: #fff url("../images/room.jpg") no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 220px;
+}
+.design{
+  background: #fff url("../images/11.jpg") no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 220px;
+}
+.team-right-module{
+  padding: 40px;
+
+}
+.team-right-module .title{
+  padding-left: 100px;
+  color: rgba(179,55,56,1);
+  font-weight: bold;
+}
+.title-team{
+  display: inline-block;
+  background: rgba(179,55,56,1);
+  padding: 8px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+.team-department-bg{
+  display: inline-block;
+  width: 170px;
+  background: rgba(179,55,56,1);
+  height: 170px;
+  border-radius:50%;
+  padding: 10px;
+  margin-left: 80px;
+  color: rgba(179,55,56,1);
+  font-weight: bold;
+}
+.team-department{
+  background: rgba(179,55,56,1) url("../images/shougong.jpg") no-repeat;
+  display: inline-block;
+  width: 160px;
+  border-radius:50%;
+  height: 160px;
+  background-size: cover;
+}
+.team-department-bg.right{
+  position: relative;
+  top: -80px;
+}
+.pleft-80{
+  padding-left: 60px;
+}
+.core-business{
+  color: #fff;
+}
+.core-business .title{
+  font-size: 30px;
+  margin: 20px 0;
+}

@@ -66,8 +66,11 @@
 
             <div class="mtop-20">
                 <div class="prc-content-module">
-                    <div class="mleft-10">
-                        <div v-for="(item,index) in btnList"  class="black-btn" :class="{'active':type==item.value,'mleft-20':index!=0}">{{item.text}}</div>
+                    <div class="t-center">
+                        <video style="width: 500px;height: 300px;" src="images/vedio/1.mp4" controls="controls"></video>
+                    </div>
+                    <div class="mleft-10 mtop-20">
+                        <div v-for="(item,index) in btnList" @click="toggle(item.value)" class="black-btn" :class="{'active':type==item.value,'mleft-20':index!=0}">{{item.text}}</div>
                     </div>
                     <div class="mtop-40">
                         <div class="prc-li" v-for="(item,index) in list">
@@ -80,7 +83,7 @@
                                 </div>
                                 <div class="go-detail" >
                                     <div class="flex-1" @click="detail(item.id)">
-                                        <span>Details</span>
+                                        <span class="hand">Details</span>
                                     </div>
                                     <div class="flex-1 t-right" @click="detail(item.id)">
                                         <img src="./images/img/rBQBHVzeREuEL1FvAAAAAB_7d88582.png" alt="">
@@ -131,6 +134,8 @@
         mounted:function(){
             this.type = this.getQueryVariable('type');
             this.list = this.data[this.type];
+
+            console.log(this.list);
             var swiper = new Swiper('.swiper-container', {
                 spaceBetween: 30,
                 centeredSlides: true,
@@ -161,14 +166,27 @@
                 },
                 {
                     text:"景观亮化",
-                    value:"jingguan"
-                },
-                {
-                    text:"产品中心",
-                    value:"chanping"
+                    value:"lianghua"
                 }
             ],
             data: {
+                "technology":[{
+                    path:'./images/v2/keji/1.jpg',
+                    text:'1',
+                    id:13
+                },{
+                    path:'./images/v2/keji/2.jpg',
+                    text:'2',
+                    id:14
+                },{
+                    path:'./images/v2/keji/3.jpg',
+                    text:'3',
+                    id:15
+                },{
+                    path:'./images/v2/keji/4.jpg',
+                    text:'4',
+                    id:16
+                }],
                 "dengguangjie":[{
                     path:'./images/v2/dengguangjie/junyunhui/3.jpg',
                     text:'2019军运会',
@@ -186,10 +204,6 @@
                     path:'./images/v2/denghui/jiuquan/8.jpg',
                     text:'2020酒泉',
                     id:4
-                },{
-                    path:'./images/v2/denghui/lanzhou/10.jpg',
-                    text:'2020兰州',
-                    id:5
                 },{
                     path:'./images/v2/denghui/lanzhou/20.jpg',
                     text:'2020兰州',
@@ -220,6 +234,36 @@
                     text:'2020顺德',
                     id:12
                 }],
+                "caiche":[{
+                    path:'./images/v2/denghui/lanzhou/10.jpg',
+                    text:'2020兰州',
+                    id:5
+                },{
+                    path:'./images/v2/denghui/lanzhou/21.jpg',
+                    text:'2020兰州',
+                    id:22
+                }],
+                "lianghua":[{
+                    path:'./images/v2/keji/5.jpg',
+                    text:'5',
+                    id:17
+                },{
+                    path:'./images/v2/keji/6.jpg',
+                    text:'6',
+                    id:18
+                },{
+                    path:'./images/v2/keji/7.jpg',
+                    text:'7',
+                    id:19
+                },{
+                    path:'./images/v2/keji/8.jpg',
+                    text:'8',
+                    id:20
+                },{
+                    path:'./images/v2/keji/9.jpg',
+                    text:'9',
+                    id:21
+                }]
             },
             list:[]
         },
